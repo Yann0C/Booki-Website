@@ -15,6 +15,36 @@ header{
     justify-content: space-between;
 }
 
+.logo img{
+    width: 61.09px;
+    height: 19px;
+}
+
+.menu{
+    font-size: 16px;
+}
+
+.menu button{ 
+    border: none;
+    background-color: transparent;
+}
+
+.menu button:hover{
+    border-top: solid;
+    border-width: 2px;
+    border-color: #0065FC; 
+    color: #0065FC; 
+}
+@media (max-width: 767.98px) {
+    .menu button:hover{
+        border: none;
+        border-bottom: solid;
+        border-width: 2px;
+        border-color: #0065FC; 
+        color: #0065FC; 
+    }
+}
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -24,12 +54,12 @@ header{
 
 /* Pas de texte mais loupe uniquement version mobile */
 .fa-solid.fa-magnifying-glass{          
-    display: none; 
+     display: none;  
 }
 
 @media (max-width: 767.98px) {
     .fa-solid.fa-magnifying-glass{
-      display: inline;  /* Afficher mobile à la suite */
+      display: solid;  
     }
 }
 
