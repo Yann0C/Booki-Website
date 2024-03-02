@@ -16,13 +16,14 @@ header{
 }
 
 .logo img{
-    width: 61.09px;
+    padding-top: 20px;
+    width: 61px;
     height: 19px;
 }
 
 .menu button{ 
     background-color: transparent;
-    border: none;
+    border: none;    
     border-top: solid;
     border-width: 2px;
     border-color: transparent;
@@ -132,17 +133,16 @@ a {
     border-radius: 25px;
     border-color: #D9D9D9;
     padding: 0 15px 0 15px;
+}
 
+.filtres-icone:hover{
+    background-color: #DEEBFF;
 }
 
 .barre-text{
-    padding: 16.7px;  /*Aligner avec la bordure */
-    border-color: #F2F2F2;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-top-width: 1px;  /* ICI*/
-    border-bottom-width: 1px;
-
+    padding: 17px;  
+    border: 1px solid #F2F2F2;
+    width: 200px; /* ICI */
 }
 
 .barre-text::placeholder {
@@ -159,9 +159,10 @@ a {
 }
 
 .fa-solid.fa-info{
-    border: 1.3px solid;
+    font-size: 10px;
+    border: 1px solid;
     border-color: #D9D9D9;
-    padding: 5px 10px 5px 10px;
+    padding: 6Px 8px 6px 8px;
     border-radius: 100%;
 }
 
@@ -255,9 +256,6 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
