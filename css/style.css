@@ -20,18 +20,17 @@ header{
     height: 19px;
 }
 
-.menu{
-    font-size: 16px;
-}
-
 .menu button{ 
-    border: none;
     background-color: transparent;
+    border: none;
+    border-top: solid;
+    border-width: 2px;
+    border-color: transparent;
+    padding: 8px 0 0 0;
+    margin: 0 25px 0;
 }
 
 .menu button:hover{
-    border-top: solid;
-    border-width: 2px;
     border-color: #0065FC; 
     color: #0065FC; 
 }
@@ -49,7 +48,17 @@ header{
     color: var(--main-color);
 }
 .fa-solid.fa-location-dot{
-    color:#000000
+    color:#000000;
+}
+
+.button-text{
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 0 15px 15px 0;
+    border-color: transparent;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
 }
 
 /* Pas de texte mais loupe uniquement version mobile */
@@ -59,13 +68,13 @@ header{
 
 @media (max-width: 767.98px) {
     .fa-solid.fa-magnifying-glass{
-      display: solid;  
+      /* display: block;   */
     }
 }
 
 @media (max-width: 767.98px){
     .button-text{
-        display: none;
+        /* display: none; */
     }
 }
 body {
@@ -85,23 +94,59 @@ a {
     text-decoration: none;
 }
 
+.formulaire-de-recherche{
+    padding: 40px 0 25px 0;
+}
+
+.section-subtitle{
+    margin: 5px 0 16px 0 ; 
+}
+
 .barre-de-recherche{
     display: flex;
     align-items: center;
+    margin: 25px 0 12px 0;
+}
+
+.logo-info{
+    padding: 16px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;   
+    width: 45px;
+    box-sizing: border-box;
 }
 
 .filtres{
     display: flex;
     align-items: center;
+    gap: 15px;
+    font-weight: bold;  
+    margin: 25px 0 15px 0;
 }
 
 .filtres-icone{
     display: flex;
     align-items: center;
+    gap: 10px;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #D9D9D9;
+    padding: 0 15px 0 15px;
+
 }
 
+.barre-text{
+    padding: 16.7px;  /*Aligner avec la bordure */
+    border-color: #F2F2F2;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 1px;  /* ICI*/
+    border-bottom-width: 1px;
 
-::placeholder {
+}
+
+.barre-text::placeholder {
+     font-size: 18px;
      color: black;
      font-weight: bold;
      text-align:center;
@@ -110,6 +155,14 @@ a {
 .barre-info{
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.fa-solid.fa-info{
+    border: 1.3px solid;
+    border-color: #D9D9D9;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100%;
 }
 
 .section-title {
